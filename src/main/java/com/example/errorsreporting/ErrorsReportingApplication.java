@@ -22,7 +22,7 @@ public class ErrorsReportingApplication {
 		SpringApplication.run(ErrorsReportingApplication.class, args);
 	}
 
-	@Bean
+//	@Bean
 	public CommandLineRunner demo(ErrorsReportingRepository repository) {
 		return (args) -> {
 			repository.save(new Error("TMFOUT", "foo.csv", "TR-001", "Unable to access OMB"));
